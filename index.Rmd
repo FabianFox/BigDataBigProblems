@@ -1,9 +1,9 @@
 ---
 title: "Big Data, Big Problems?"
-subtitle: "Teaching Web Scraping"
+subtitle: "Insights from Teaching Web Scraping"
 author: "Fabian Gülzau"
 institute: "HU Berlin"
-date: "`r Sys.Date()`"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
@@ -14,12 +14,12 @@ output:
       countIncrementalSlides: false
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
 
-```{r xaringan-themer, include=FALSE, warning=FALSE}
+```{r xaringan-themer, include = FALSE, warning = FALSE}
 library(xaringanthemer)
 style_mono_accent(
   base_color = "#1c5253",
@@ -29,3 +29,56 @@ style_mono_accent(
 )
 ```
 
+# Content
+
+1. Experience
+  + Curriculum
+  + Issues
+  + Approach
+2. Developments in Web Scraping
+3. Suggestions
+
+---
+
+# Experience
+
+- Teaching primers and one-day workshops on web scraping
+  - postgraduate level and faculty
+
+---
+
+# Curriculum
+
+```{r curriculum, echo = FALSE, eval= TRUE, warning = FALSE, message = FALSE, fig.width = 10, fig.height = 6, dpi = 300}
+library(tidyverse)
+library(lubridate)
+
+curriculum.df <- tibble(
+  task = factor(
+    c("Introduction", "Web technologies", "Application in R", "Break",
+      "Application in R", "Advanced topics", "Legalities & ethics"),
+    levels = c("Introduction", "Web technologies", "Application in R", "Break",
+               "Advanced topics", "Legalities & ethics")),
+  start = c(hm("9:00"), hm("9:30"), hm("11:00"), hm("12:00"), hm("13:00"), 
+            hm("15:00"), hm("16:30")),
+  end = c(hm("9:30"), hm("11:00"), hm("12:00"), hm("13:00"), hm("15:00"), 
+          hm("16:30"), hm("17:30")),
+  pause = c(1, 1, 1, 0, 1, 1, 1))
+
+ggplot(curriculum.df, aes(x = fct_rev(task), xend = fct_rev(task), 
+                          y = start, yend = end, colour = factor(pause))) + 
+  geom_segment(size = 10, show.legend = FALSE) + 
+  coord_flip() +
+  labs(x = "", y = "") +
+  scale_y_time(labels = function(x)stringr::str_sub(format(x), end = -4L)) +
+  theme_xaringan(background_color = "#FFFFFF") +
+  scale_xaringan_colour_discrete()
+```
+
+---
+
+# Issues
+
+---
+
+# Approach
