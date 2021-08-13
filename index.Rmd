@@ -97,9 +97,9 @@ ggplot(curriculum.df, aes(x = fct_rev(task), xend = fct_rev(task),
 DiagrammeR::grViz("
 digraph stakeholders {
 
-graph [overlap = true, fontsize = 10]
+graph [overlap = true, fontsize = 10, fontname = Montserrat]
 
-node [shape = box, fontname = Montserrat]
+node [shape = box]
 nodeA [label = 'Researcher'];
 nodeB [label = 'Web\noperator'];
 nodeC [label = 'User']
