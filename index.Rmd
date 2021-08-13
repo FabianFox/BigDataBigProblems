@@ -94,6 +94,10 @@ ggplot(curriculum.df, aes(x = fct_rev(task), xend = fct_rev(task),
 
 # Approach
 
+> "Big data? Cheap. Lawyers? Not so much."
+
+— Pete Warden (cit. in Mitchell 2015. Web Scraping with Python) 
+
 - Sensitize participants (ToS, non-reactive data)
 - Contact universities' ethics commission
 - Introduce tools (e.g. `robotstxt`)
