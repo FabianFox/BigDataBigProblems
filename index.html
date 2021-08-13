@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta name="author" content="Fabian Gülzau" />
     <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/viz/viz.js"></script>
+    <link href="libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
+    <script src="libs/grViz-binding/grViz.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -53,6 +57,7 @@ class: center, middle, inverse, title-slide
 
 # Issues
 
+.pull-left[
 - Time constraints (max. 1h on legalities/ethics)
 - Multiple third-parties
   - Website operator
@@ -61,6 +66,12 @@ class: center, middle, inverse, title-slide
   - Social media
   - Corporate data
   - APIs, websites...
+]
+
+.pull-right[
+<div id="htmlwidget-97434ab02fd120f1f95f" style="width:80%;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-97434ab02fd120f1f95f">{"x":{"diagram":"\ndigraph stakeholders {\n\ngraph [overlap = true, fontsize = 10]\n\nnode [shape = box, fontname = Montserrat]\nnodeA [label = \"Researcher\"];\nnodeB [label = \"Web\noperator\"];\nnodeC [label = \"User\"]\n\nnodeA->nodeB [label=\"Legalities\", fontsize = 7];\nnodeA->nodeC [label=\" Ethics\", fontsize = 7]\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+]
 
 ---
 

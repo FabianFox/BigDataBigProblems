@@ -51,7 +51,7 @@ style_mono_accent(
 
 # Curriculum
 
-```{r curriculum, echo = FALSE, eval= TRUE, warning = FALSE, message = FALSE, fig.width = 10, fig.height = 6, dpi = 300}
+```{r curriculum, echo = FALSE, eval = TRUE, warning = FALSE, message = FALSE, fig.width = 10, fig.height = 6, dpi = 300}
 library(tidyverse)
 library(lubridate)
 
@@ -81,6 +81,7 @@ ggplot(curriculum.df, aes(x = fct_rev(task), xend = fct_rev(task),
 
 # Issues
 
+.pull-left[
 - Time constraints (max. 1h on legalities/ethics)
 - Multiple third-parties
   - Website operator
@@ -89,6 +90,25 @@ ggplot(curriculum.df, aes(x = fct_rev(task), xend = fct_rev(task),
   - Social media
   - Corporate data
   - APIs, websites...
+]
+
+.pull-right[
+```{r stakeholder, eval = TRUE, echo = FALSE, out.width = "80%"}
+DiagrammeR::grViz("
+digraph stakeholders {
+
+graph [overlap = true, fontsize = 10]
+
+node [shape = box, fontname = Montserrat]
+nodeA [label = 'Researcher'];
+nodeB [label = 'Web\noperator'];
+nodeC [label = 'User']
+
+nodeA->nodeB [label='Legalities', fontsize = 7];
+nodeA->nodeC [label=' Ethics', fontsize = 7]
+}")
+```
+]
 
 ---
 
