@@ -37,6 +37,7 @@ style_mono_accent(
   + Approach
 2. Developments in Web Scraping
 3. Suggestions
+4. Conclusion
 
 ---
 
@@ -171,4 +172,13 @@ nodeB->nodeC
 
 .pull-right[
 
+#### Nowcasting migrant stocks
+
+```{r facebook_ad, eval = TRUE, echo = FALSE}
+knitr::include_graphics("./img/Zagheni_et_al_2017_LeveragingFacebooksAdvertisingPlatform.PNG")
+```
+
+- Rewards & risks
+- ToS (Facebook)
+- Users (i.e. migrants)
 ]
