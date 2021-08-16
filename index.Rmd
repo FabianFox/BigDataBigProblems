@@ -74,7 +74,8 @@ ggplot(curriculum.df, aes(x = fct_rev(task), xend = fct_rev(task),
   coord_flip() +
   labs(x = "", y = "") +
   scale_y_time(labels = function(x)stringr::str_sub(format(x), end = -4L)) +
-  theme_xaringan(background_color = "#FFFFFF") +
+  theme_xaringan(background_color = "#FFFFFF",
+                 text_font_size	= 60) +
   scale_colour_manual(values = c("#1c5253", "#cccccc"))
 ```
 
@@ -144,7 +145,7 @@ nodeA->nodeC [label=' Ethics', fontsize = 7]
 ]
 
 .pull-right[
-```{r developments, eval = TRUE, echo = FALSE, out.width = "80%"}
+```{r developments, eval = TRUE, echo = FALSE, out.width = "70%"}
 DiagrammeR::grViz("
 digraph developments {
 
