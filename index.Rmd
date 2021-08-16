@@ -145,7 +145,7 @@ nodeA->nodeC [label=' Ethics', fontsize = 7]
 ]
 
 .pull-right[
-```{r developments, eval = TRUE, echo = FALSE, out.width = "70%"}
+```{r developments, eval = TRUE, echo = FALSE, out.width = "60%"}
 DiagrammeR::grViz("
 digraph developments {
 
