@@ -182,3 +182,19 @@ knitr::include_graphics("./img/Zagheni_et_al_2017_LeveragingFacebooksAdvertising
 - ToS (Facebook)
 - Users (i.e. migrants)
 ]
+
+---
+
+# Conclusion
+
+.pull-left[
+- Limited time
+]
+
+.pull-right[
+</br></br></br></br></br></br></br></br></br></br></br></br>
+[`r fontawesome::fa(name = "link")` Slides:  https://bit.ly/3CUuU4m](https://fabianfox.github.io/BigDataBigProblems/)
+
+[`r fontawesome::fa(name = "home")` https://fguelzau.rbind.io](https://fguelzau.rbind.io)
+
+[`r fontawesome::fa(name = "paper-plane")` fabianguelzau@hu-berlin.de](mailto:fabianguelzau@hu-berlin.de)]
