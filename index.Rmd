@@ -118,7 +118,7 @@ nodeA->nodeC [label=' Ethics', fontsize = 7]
 
 > "Big data? Cheap. Lawyers? Not so much."
 
-— Pete Warden (cit. in Mitchell 2015. Web Scraping with Python) 
+.right[<font size="3">— Pete Warden (cit. in Mitchell 2015. Web Scraping with Python) </font size>]
 
 - Inform participants (ToS, non-reactive data, "friendly scraping")
 - Contact universities' ethics commission
@@ -142,7 +142,7 @@ nodeA->nodeC [label=' Ethics', fontsize = 7]
 #### Third stage
 - Common standards & rules
 
-.right[.footnote[(cf. Bruns 2019, Puschmann 2019)]]
+.left[.footnote[<font size="3">(cf. Bruns 2019, Puschmann 2019)</font size>]]
 
 ]
 
@@ -171,6 +171,7 @@ nodeB->nodeC
 .pull-left[
 - Case studies
 - Guidelines
+- History of web scraping <font size = "3">(APIcalypse, CambridgeAnalytica)</font size>
 ]
 
 .pull-right[
@@ -191,7 +192,15 @@ knitr::include_graphics("./img/Zagheni_et_al_2017_LeveragingFacebooksAdvertising
 # Conclusion
 
 .pull-left[
+#### Issues
 - Limited time
+- (Few) guidelines <font size = "3">(but see: Salganik 2019)</font size>
+
+#### Objectives
+- Teaching materials
+  - Collection of case studies
+  - Discussion 
+
 ]
 
 .pull-right[
@@ -201,3 +210,18 @@ knitr::include_graphics("./img/Zagheni_et_al_2017_LeveragingFacebooksAdvertising
 [`r fontawesome::fa(name = "home")` https://fguelzau.rbind.io](https://fguelzau.rbind.io)
 
 [`r fontawesome::fa(name = "paper-plane")` fabianguelzau@hu-berlin.de](mailto:fabianguelzau@hu-berlin.de)]
+
+---
+
+# Bibliography
+
+**Bruns, A.** (2019) After the ‘APIcalypse’: social media platforms and their fight against critical scholarly research, Information, Communication & Society, 22:11, 1544-1566, DOI: 10.1080/1369118X.2019.1637447 
+
+**Mitchell, R.** (2015) Web scraping with python. Collecting Data from the modern web, Sebastopol: O'Reilly.
+
+**Puschmann, C.** (2019) An end to the wild west of social media research: a response to Axel Bruns, Information, Communication & Society, 22:11, 1582-1589, DOI: 10.1080/1369118X.2019.1646300
+
+**Salganik, M.J.** (2018) Bit by bit. Social research in the digital age, Princeton: Princeton University.
+
+**Zagheni, E., Weber, I. and K. Gummadi** (2017) Leveraging facebook's advertising platform
+to monitor stocks of migrants, Population and Development Review, 43:4, 721-732, 10.1111/padr.12102
