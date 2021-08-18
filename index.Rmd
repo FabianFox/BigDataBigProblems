@@ -142,7 +142,7 @@ nodeA->nodeC [label=' Ethics', fontsize = 7]
 #### Third stage
 - Common standards & rules
 
-.left[.footnote[<font size="3">(cf. Bruns 2019, Puschmann 2019)</font size>]]
+.left[.footnote[<font size="3">(Bruns 2019, Puschmann 2019)</font size>]]
 
 ]
 
