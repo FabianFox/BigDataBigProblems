@@ -131,21 +131,23 @@ nodeA->nodeC [label=' Ethics', fontsize = 7]
 
 .pull-left[
 
-#### First stage 
+#### First stage
 - Abundance of data
 - No professional standards
 
-#### Second stage (Bruns 2019)
+#### Second stage
 - Access limited by companies
 - Professional deliberation
 
 #### Third stage
 - Common standards & rules
 
+.right[.footnote[(cf. Bruns 2019, Puschmann 2019)]]
+
 ]
 
 .pull-right[
-```{r developments, eval = TRUE, echo = FALSE, out.width = "60%"}
+```{r developments, eval = TRUE, echo = FALSE, out.width = "50%"}
 DiagrammeR::grViz("
 digraph developments {
 
