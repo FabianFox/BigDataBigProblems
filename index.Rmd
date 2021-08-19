@@ -66,17 +66,22 @@ curriculum.df <- tibble(
             hm("15:00"), hm("16:30")),
   end = c(hm("9:30"), hm("11:00"), hm("12:00"), hm("13:00"), hm("15:00"), 
           hm("16:30"), hm("17:30")),
+  label = c(NA, "html, request-response", NA, NA, "rvest, purrr", "RSelenium, APIs", NA),
   pause = c(0, 0, 0, 1, 0, 0, 0))
 
 ggplot(curriculum.df, aes(x = fct_rev(task), xend = fct_rev(task), 
                           y = start, yend = end, colour = factor(pause))) + 
   geom_segment(size = 10, show.legend = FALSE) + 
+  geom_label(aes(x = fct_rev(task), 
+                 y = seconds_to_period(as.numeric(start + end) / 2),
+                 label = label), size = 10, show.legend = FALSE) +
   coord_flip() +
   labs(x = "", y = "") +
   scale_y_time(labels = function(x)stringr::str_sub(format(x), end = -4L)) +
   theme_xaringan(background_color = "#FFFFFF",
                  text_font_size	= 60) +
   scale_colour_manual(values = c("#1c5253", "#cccccc"))
+
 ```
 
 ---
