@@ -19,7 +19,7 @@ class: center, middle, inverse, title-slide
 ## Insights from Teaching Web Scraping
 ### Fabian Gülzau
 ### HU Berlin
-### 19 August, 2021
+### 20 August, 2021
 
 ---
 
@@ -32,6 +32,7 @@ class: center, middle, inverse, title-slide
 # Content
 
 1. Teaching Web Scraping
+  + Experience
   + Curriculum
   + Issues
   + Approach
@@ -59,19 +60,20 @@ class: center, middle, inverse, title-slide
 # Issues
 
 .pull-left[
-- Time constraints (max. 1h on legalities/ethics)
+- Time constraints (~1h time slot)
 - Multiple third-parties
-  - Website operator
+  - Website operators
   - Users
+  - ...
 - Many cases &amp; tools
   - Social media
   - Corporate data
-  - APIs, websites...
+  - APIs, personal websites...
 ]
 
 .pull-right[
-<div id="htmlwidget-6bfe6a1625e189d08da2" style="width:80%;height:504px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6bfe6a1625e189d08da2">{"x":{"diagram":"\ndigraph stakeholders {\n\ngraph [overlap = true, fontsize = 10, fontname = Montserrat]\n\nnode [shape = box]\nnodeA [label = \"Researcher\"];\nnodeB [label = \"Web\noperator\"];\nnodeC [label = \"User\"]\n\nnodeA->nodeB [label=\"Legalities\", fontsize = 7];\nnodeA->nodeC [label=\" Ethics\", fontsize = 7]\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ba4b2fd5f237a76edc40" style="width:80%;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ba4b2fd5f237a76edc40">{"x":{"diagram":"\ndigraph stakeholders {\n\ngraph [overlap = true, fontsize = 10, fontname = Montserrat]\n\nnode [shape = box]\nnodeA [label = \"Researcher\"];\nnodeB [label = \"Web\noperator\"];\nnodeC [label = \"User\"]\n\nnodeA->nodeB [label=\"Legalities\", fontsize = 7];\nnodeA->nodeC [label=\" Ethics\", fontsize = 7]\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 ]
 
 ---
@@ -83,7 +85,7 @@ class: center, middle, inverse, title-slide
 .right[&lt;font size="2"&gt;— Pete Warden (cit. in Mitchell 2015. Web Scraping with Python) &lt;/font size&gt;]
 
 - Inform participants (ToS, non-reactive data, "friendly scraping")
-- Contact universities' ethics commission
+- Ethics commission
 - Introduce tools (e.g. `robotstxt`)
 - Discuss participants' research
 
@@ -104,13 +106,13 @@ class: center, middle, inverse, title-slide
 #### Third stage
 - Common standards &amp; rules
 
-.left[.footnote[&lt;font size="3"&gt;(Bruns 2019, Puschmann 2019)&lt;/font size&gt;]]
+.left[.footnote[&lt;font size="3"&gt;(Bruns 2019, Puschmann 2019, Salganik 2018)&lt;/font size&gt;]]
 
 ]
 
 .pull-right[
-<div id="htmlwidget-d9693475de28645b0518" style="width:50%;height:504px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d9693475de28645b0518">{"x":{"diagram":"\ndigraph developments {\n\ngraph [overlap = true, fontsize = 10, fontname = Montserrat]\n\nnode [shape = box]\nnodeA [label = \"Wild west\"];\nnodeB [label = \"APIcalypse\"];\nnodeC [label = \"Legal & ethical\nreflections\"]\n\nnodeA->nodeB\nnodeB->nodeC\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-af5c2505726192439bab" style="width:50%;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-af5c2505726192439bab">{"x":{"diagram":"\ndigraph developments {\n\ngraph [overlap = true, fontsize = 10, fontname = Montserrat]\n\nnode [shape = box]\nnodeA [label = \"Wild west\"];\nnodeB [label = \"APIcalypse\"];\nnodeC [label = \"Legal & ethical\nreflections\"]\n\nnodeA->nodeB\nnodeB->nodeC\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 ]
 
 ---
@@ -120,7 +122,8 @@ class: center, middle, inverse, title-slide
 .pull-left[
 - Case studies
 - Guidelines
-- History of web scraping &lt;font size = "3"&gt;(APIcalypse, CambridgeAnalytica)&lt;/font size&gt;
+- History of web scraping &lt;font size = "3"&gt;(APIcalypse)&lt;/font size&gt;
+- Data scandals (CambridgeAnalytica, Emotional-contagion)
 ]
 
 .pull-right[
@@ -143,11 +146,10 @@ class: center, middle, inverse, title-slide
 - Limited time
 - (Few) guidelines &lt;font size = "3"&gt;(but see: Salganik 2019)&lt;/font size&gt;
 
-#### Objectives
+#### How to move forward?
 - Teaching materials
   - Collection of case studies
   - Discussion 
-
 ]
 
 .pull-right[

@@ -32,6 +32,7 @@ style_mono_accent(
 # Content
 
 1. Teaching Web Scraping
+  + Experience
   + Curriculum
   + Issues
   + Approach
@@ -66,7 +67,7 @@ curriculum.df <- tibble(
             hm("15:00"), hm("16:30")),
   end = c(hm("9:30"), hm("11:00"), hm("12:00"), hm("13:00"), hm("15:00"), 
           hm("16:30"), hm("17:30")),
-  label = c(NA, "html, request-response", NA, NA, "rvest, purrr", "RSelenium, APIs", NA),
+  label = c(NA, "http, html, CSS", "setup", NA, "rvest, purrr", "RSelenium, APIs", NA),
   pause = c(0, 0, 0, 1, 0, 0, 0))
 
 ggplot(curriculum.df, aes(x = fct_rev(task), xend = fct_rev(task), 
@@ -90,14 +91,15 @@ ggplot(curriculum.df, aes(x = fct_rev(task), xend = fct_rev(task),
 # Issues
 
 .pull-left[
-- Time constraints (max. 1h on legalities/ethics)
+- Time constraints (~1h time slot)
 - Multiple third-parties
-  - Website operator
+  - Website operators
   - Users
+  - ...
 - Many cases & tools
   - Social media
   - Corporate data
-  - APIs, websites...
+  - APIs, personal websites...
 ]
 
 .pull-right[
@@ -127,7 +129,7 @@ nodeA->nodeC [label=' Ethics', fontsize = 7]
 .right[<font size="2">— Pete Warden (cit. in Mitchell 2015. Web Scraping with Python) </font size>]
 
 - Inform participants (ToS, non-reactive data, "friendly scraping")
-- Contact universities' ethics commission
+- Ethics commission
 - Introduce tools (e.g. `robotstxt`)
 - Discuss participants' research
 
@@ -148,7 +150,7 @@ nodeA->nodeC [label=' Ethics', fontsize = 7]
 #### Third stage
 - Common standards & rules
 
-.left[.footnote[<font size="3">(Bruns 2019, Puschmann 2019)</font size>]]
+.left[.footnote[<font size="3">(Bruns 2019, Puschmann 2019, Salganik 2018)</font size>]]
 
 ]
 
@@ -177,7 +179,8 @@ nodeB->nodeC
 .pull-left[
 - Case studies
 - Guidelines
-- History of web scraping <font size = "3">(APIcalypse, CambridgeAnalytica)</font size>
+- History of web scraping <font size = "3">(APIcalypse)</font size>
+- Data scandals (CambridgeAnalytica, Emotional-contagion)
 ]
 
 .pull-right[
@@ -202,11 +205,10 @@ knitr::include_graphics("./img/Zagheni_et_al_2017_LeveragingFacebooksAdvertising
 - Limited time
 - (Few) guidelines <font size = "3">(but see: Salganik 2019)</font size>
 
-#### Objectives
+#### How to move forward?
 - Teaching materials
   - Collection of case studies
   - Discussion 
-
 ]
 
 .pull-right[
