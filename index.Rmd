@@ -133,7 +133,7 @@ nodeA->nodeC [label=' Ethics', fontsize = 7]
 - Introduce tools (e.g. `robotstxt`, `polite`)
 - Discuss participants' research
 
-```{r common_crawl, eval = TRUE, echo = FALSE, out.width = "70%"}
+```{r common_crawl, eval = TRUE, echo = FALSE, out.width = "65%"}
 knitr::include_graphics("./img/CommonCrawl.webp")
 ```
 
