@@ -128,10 +128,16 @@ nodeA->nodeC [label=' Ethics', fontsize = 7]
 
 .right[<font size="2">— Pete Warden (cit. in Mitchell 2015. Web Scraping with Python) </font size>]
 
-- Inform participants (ToS, non-reactive data, "friendly scraping")
+- Inform participants (ToS, non-reactive data, ["friendly scraping"](https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01))
 - Ethics commission
-- Introduce tools (e.g. `robotstxt`)
+- Introduce tools (e.g. `robotstxt`, `polite`)
 - Discuss participants' research
+
+```{r common_crawl, eval = TRUE, echo = FALSE, out.width = "70%"}
+knitr::include_graphics("./img/CommonCrawl.webp")
+```
+
+<font size="2">Image source: [Rudis (2017)](https://rud.is/b/2017/07/28/analyzing-wait-delay-settings-in-common-crawl-robots-txt-data-with-r/)</font size>
 
 ---
 
@@ -204,11 +210,11 @@ knitr::include_graphics("./img/Zagheni_et_al_2017_LeveragingFacebooksAdvertising
 #### Issues
 - Limited time
 - (Few) guidelines <font size = "3">(but see: Salganik 2019)</font size>
+- Multiple third-parties
 
 #### How to move forward?
-- Teaching materials
-  - Collection of case studies
-  - Discussion 
+- Discuss teaching materials
+- Collection of case studies
 ]
 
 .pull-right[
@@ -228,6 +234,8 @@ knitr::include_graphics("./img/Zagheni_et_al_2017_LeveragingFacebooksAdvertising
 **Mitchell, R.** (2015) Web scraping with python. Collecting Data from the modern web, Sebastopol: O'Reilly.
 
 **Puschmann, C.** (2019) An end to the wild west of social media research: a response to Axel Bruns, Information, Communication & Society, 22:11, 1582-1589, DOI: 10.1080/1369118X.2019.1646300
+
+**Rudis, B.** (2017) Analyzing “crawl-delay” settings in common crawl robots.txt data with R, https://rud.is/b/2017/07/28/analyzing-wait-delay-settings-in-common-crawl-robots-txt-data-with-r/.
 
 **Salganik, M.J.** (2018) Bit by bit. Social research in the digital age, Princeton: Princeton University.
 
