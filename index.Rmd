@@ -6,6 +6,7 @@ institute: "HU Berlin"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   xaringan::moon_reader:
+    self_contained: true
     css: xaringan-themer.css
     lib_dir: libs
     nature:
