@@ -77,12 +77,12 @@ ggplot(curriculum.df, aes(x = fct_rev(task), xend = fct_rev(task),
   # https://newbedev.com/how-to-add-label-to-geom-segment-at-the-start-of-the-segment
   geom_label(aes(x = fct_rev(task), 
                  y = seconds_to_period(as.numeric(start + end) / 2),
-                 label = label), size = 10, show.legend = FALSE) +
+                 label = label), size = 3, show.legend = FALSE) +
   coord_flip() +
   labs(x = "", y = "") +
   scale_y_time(labels = function(x)stringr::str_sub(format(x), end = -4L)) +
   theme_xaringan(background_color = "#FFFFFF",
-                 text_font_size	= 60) +
+                 text_font_size	= 20) +
   scale_colour_manual(values = c("#1c5253", "#cccccc"))
 
 ```
